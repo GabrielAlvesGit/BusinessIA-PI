@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login - Meu Aplicativo</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/img/IconeBusiness.IA.png" alt="Icone Business">
+    </header>
+    
+    <main>
+        <div class="login-container">
+            <h1>Faça login</h1>
+            <form id="login-form">
+                <div id="msgError"></div>
+                <div class="div-emailLogin" id="divemailLogin">
+                     <!--Fazer a mudaçanda de text para email!!!-->
+                    <input type="text" id="emailLogin" required>
+                    <label for="email" id="emailLabelLogin">Email</label>
+                    <button type="button" class="btnProximoLogin" id="btnProximoEmail">Próximo
+                    </button>
+                </div>
+
+                <div class="div-senhaLogin" id="divsenhaLogin" style="display: none;">
+                    <input type="password" id="senhaLogin" required>
+                    <label for="senha" id="senhaLabelLogin">Senha</label>
+                    <i class="material-symbols-outlined" id="verSenhaLogin">visibility</i>
+                </div>
+                <div id="msgErrorLogin"></div>
+
+                <button type="submit" class="btnEntrarLogin" id="btnEntrarLogin" onclick="entrar()" style="display: none;">Entrar</button> 
+
+                <p>
+                    Não tem uma conta?
+                    <a href="./signUp.html">Cadastre-se</a>
+                </p>
+            </form>
+        </div>
+      </main>
+
+
+    <script>
+         // 1º Captura os elementos relevantes do btnClick Proximo e
+         let btnProximoEmail = document.getElementById("btnProximoEmail");
+        let divsenhaLogin = document.getElementById("divsenhaLogin");
+        let btnEntrarLogin = document.getElementById("btnEntrarLogin");
+        
+
+        // 1º Adiciona um ouvinte de evento ao botão "Próximo" do email
+        btnProximoEmail.addEventListener("click", function () {
+            btnProximoEmail.style.display = "none";
+            divsenhaLogin.style.display = "block";
+            btnEntrarLogin.style.display = "block";
+         });
+
+         // 2º Adicionando o btn ao minha class .material-symbols-outlined do icone olho para alternar a visibilidade da senha em Cadastro  👁️ let btn = document.querySelector('#verSenha');
+        let btnn = document.querySelector("#verSenhaLogin");
+        btnn.addEventListener("click", () => {
+            let inputSenha = document.querySelector("#senhaLogin"); 
+            let icon = document.querySelector(".material-symbols-outlined");
+
+            if (inputSenha.getAttribute("type") === "password") {
+                inputSenha.setAttribute("type", "text");
+                icon.textContent = "visibility_off"; 
+            } else {
+                inputSenha.setAttribute("type", "password");
+                icon.textContent = "visibility"; 
+            }
+        });
+
+        function entrar() {
+        let emailLogin = document.querySelector('#emailLogin').value;
+        let senhaLogin = document.querySelector('#senhaLogin').value;
+        let emailLabelLogin = document.querySelector('#emailLabelLogin');
+        let senhaLabelLogin = document.querySelector('#senhaLabelLogin');
+        let msgErrorLogin = document.querySelector('#msgErrorLogin');
+
+        // Obtenha a lista de usuários do localStorage
+        let listaUser = JSON.parse(localStorage.getItem('listaUser')) || [];
+
+        let userValid = {
+            email: '',
+            senha: ''
+        };
+
+        let loginSucedido = false;
+
+        listaUser.forEach((item) => {
+            if (emailLogin === item.emailCad && senhaLogin === item.senhaCad) {
+                userValid = {
+                    email: item.emailCad,
+                    senha: item.senhaCad
+                };
+                loginSucedido = true;
+            }
+        });
+
+        if (loginSucedido) {
+            window.location.href = './dashboard.html';
+            alert('Deu Certo');
+        } else {
+            document.querySelector('#emailLogin').style.borderColor = 'red';
+            emailLabelLogin.style.color = 'red';
+            document.querySelector('#senhaLogin').style.borderColor = 'red';
+            senhaLabelLogin.style.color = 'red';
+            msgErrorLogin.style.display = 'block';
+            msgErrorLogin.innerHTML = 'Usuário ou senha incorretos';
+            document.querySelector('#emailLogin').focus();
+        }
+    }
+
+// Adicione um evento de clique no botão "Entrar" para chamar a função de login e permanecer na 
+// tela de erro
+btnEntrarLogin.addEventListener("click", function (event) {
+    event.preventDefault(); // Impedir o envio padrão do formulário
+    entrar(); // Chame a função de login quando o botão for clicado
+});
+
+
+
+
+
+        /* Meu codigo original
+      // 1º Captura os elementos relevantes do btnClick Proximo e
+        let btnProximoEmail = document.getElementById("btnProximoEmail");
+        let divsenhaLogin = document.getElementById("divsenhaLogin");
+        let btnEntrarLogin = document.getElementById("btnEntrarLogin");
+        
+
+        // 1º Adiciona um ouvinte de evento ao botão "Próximo" do email
+        btnProximoEmail.addEventListener("click", function () {
+            btnProximoEmail.style.display = "none";
+            divsenhaLogin.style.display = "block";
+            btnEntrarLogin.style.display = "block";
+         });
+
+         // 2º Adicionando o btn ao minha class .material-symbols-outlined do icone olho para alternar a visibilidade da senha em Cadastro  👁️ let btn = document.querySelector('#verSenha');
+        let btnn = document.querySelector("#verSenhaLogin");
+        btnn.addEventListener("click", () => {
+            let inputSenha = document.querySelector("#senhaLogin"); 
+            let icon = document.querySelector(".material-symbols-outlined");
+
+            if (inputSenha.getAttribute("type") === "password") {
+                inputSenha.setAttribute("type", "text");
+                icon.textContent = "visibility_off"; 
+            } else {
+                inputSenha.setAttribute("type", "password");
+                icon.textContent = "visibility"; 
+            }
+        });
+
+        /*4º Function btnEntra para o usuario logar
+        function entrar() {
+        let emailLogin = document.querySelector('#emailLogin');
+        let emailLabelLogin = document.querySelector('#emailLabelLogin');
+
+        let senhaLogin = document.querySelector('#senhaLogin');
+        let senhaLabelLogin = document.querySelector('#senhaLabelLogin');
+        let msgErrorLogin = document.querySelector('#msgErrorLogin');
+        
+        let listaUser = JSON.parse(localStorage.getItem('listaUser'));
+    
+        let userValid = {
+            email: '',
+            senha: ''
+        };
+        
+        listaUser.forEach((item) => {
+            if (emailLogin == item.emailCad && senhaLogin == item.senhaCad) {
+                userValid = {
+                    email: item.emailCad,
+                    senha: item.senhaCad
+                };
+            }
+        });
+
+        if (userValid.email == emailLogin && userValid.senha == senhaLogin) {
+            window.location.href = './dashboard.html';
+            alert('Deu Certo');
+        } else {
+            emailLogin.setAttribute('style','border-color: red'); 
+            emailLabelLogin.setAttribute('style','color: red');
+            senhaLogin.setAttribute('style','border-color: red') 
+            senhaLabelLogin.setAttribute('style','color: red') 
+            msgErrorLogin.setAttribute('style','display: block')
+            msgErrorLogin.innerHTML = 'Usuário ou senha incorretos' 
+            emailLogin.focus();
+            }
+         }
+         */
+
+
+        
+        
+
+
+
+
+        /*
+        //Pegando o btn do Icone
+        let btn = document.querySelector('.material-symbols-outlined');
+        // Clicar Icone olho vai exibir a senha 
+        btn.addEventListener('click', () => {
+            let senhaInput = document.querySelector('#senha');
+            if (senhaInput) {
+                if (senhaInput.getAttribute('type') === 'password') {
+                    senhaInput.setAttribute('type', 'text');
+                } else {
+                    senhaInput.setAttribute('type', 'password');
+                }
+            }
+        });
+
+        
+
+
+         function entrar() {
+            let email = document.querySelector('#email')
+            let emailLabel = document.querySelector('#emailLabel')
+
+            let senha = document.querySelector('#senha')
+            let senhaLabel = document.querySelector('#senhaLabel')
+
+            let msgError = document.querySelector('#msgError')
+            let listaUser = []
+  
+            let userValid = {
+                nome: null,
+                user: null, 
+                senha: null
+            }
+                // Obtém a lista de usuários do localStorage
+                listaUser = JSON.parse(localStorage.getItem('listaUser')) || [];
+
+                userValid = null;
+
+                // Procura um usuário com o email e senha fornecidos
+                listaUser.forEach((item) => {
+                    if (email === item.userCad && senha === item.senhaCad) {
+                        userValid = {
+                            nome: item.nomeCad,
+                            user: item.userCad,
+                            senha: item.senhaCad
+                        };
+                    }
+                });
+
+                if (userValid) {
+                    alert('Login bem-sucedido');
+                    // Redirecione o usuário para a página principal após o login
+                    window.location.href = "pagina_principal.html";
+                } else {
+                    emailLabel.setAttribute('style', 'color: red')
+                    email.setAttribute('style', 'border-color: red')
+                    senhaLabel.setAttribute('style', 'color: red')
+                    senha.setAttribute('style', 'border-color: red')
+                    msgError
+                }
+            }
+*/
+    </script>
+</body>
+</html>

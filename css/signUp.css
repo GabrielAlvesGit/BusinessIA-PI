@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*------------------------------------- Cadastro - SignUp -------------------------------------*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagem - Icon do Cadastro Sign Up - Email & Senha*/
+header img {
+    display: flex;
+    width: 65px;
+    max-width: 100%;
+    align-items: center;
+    padding: 30px 0 0;
+    cursor: pointer;
+}
+
+/*Main do Cadastro Sign Up - Email & Senha*/
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/*Conatiner do Cadastro Sign Up - Email & Senha*/
+.logUp-container {
+    /*background-color: #e0565680;*/
+    padding: 30px;
+    border-radius: 4%;
+    /*box-shadow: 3px 3px 1px 0px #00000060;*/
+    width: 400px;
+}
+
+/*h1 (Cadastrar) do Cadastro Sign Up - Email & Senha*/
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272727;
+}
+
+/* Chamando os Inputs(Barras para inserir o texto) do Cadastro Sign Up - Email & Senha*/
+.label-float input {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 5px;
+    border: 1px solid #c2c8d0;
+    background-color: transparent;
+    outline: none;
+    min-width: 100px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: 3px;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+}
+
+.label-float input:focus {
+    border: 1px solid #feb602;
+}
+
+/*Modificação da letra Label Email e Senha*/
+.label-float label {
+    color: #6f7780;
+    pointer-events: none;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    margin-top: 13px;
+    /*padding: 0px 16px;*/
+    transition: all 0.3s ease-out, box-shadow 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+}
+
+/*Modificação da letra Email e Senha quando tiver com o mouse dentro do input*/
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 14px;
+    margin-top: 0;
+    color: #10a37f;
+    left: 4px;
+    top: -2px;
+    background-color: #fff;
+    padding: 4px;
+}
+
+/* btn Proximo de cadastrar signup*/
+.btnProximo,
+.btnEntrar {
+    width: 100%;
+    padding: 4px 16px;
+    margin-top: 24px;
+    min-height: 52px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #ffce00;
+    margin-bottom: 5px;
+    transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+/* Passar o mouse por cima mude de cor*/
+.btnProximo:hover,
+.btnEntrar:hover {
+    background-color: #feb602; /* Cor de fundo quando o mouse passa por cima */
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* Click do mouse por  mude de cor*/
+.btnProximo:active,
+.btnEntrar:active {
+    box-shadow: 0px 0px 0px 5px rgba(254, 182, 2, 0.5); /* Adiciona sombra quando o botão é clicado */
+}
+
+/* Já tem uma conta? Conecte-se*/
+p {
+    text-align: center;
+    color: #2d333a;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+p a {
+    color: #feb602;
+}
+
+/* Inserir o olho para visualizar a senha dentro do campo input*/
+.material-symbols-outlined {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    cursor: pointer;
+    color: #6f7780;
+}
+
+/* Msg de Error email*/
+#msgError {
+    display: none;
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Msg de Sucesso email*/
+#msgSucesso {
+    display: none;
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Span erro*/
+.errorEmail {
+    margin-bottom: -20px;
+}

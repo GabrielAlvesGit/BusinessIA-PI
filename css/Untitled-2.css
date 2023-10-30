@@ -1,0 +1,236 @@
+:root {
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+  --color-neutral-50: #ffce00;
+  --color-neutral-60: #1a1a13;
+}
+footer {
+  background-color: var(--color-neutral-40);
+  color: var(--color-neutral-60);
+  padding: 3rem 0;
+}
+
+.footer-Container {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(4, minmax(26%, 1fr));
+  padding: 3rem 3.5rem;
+  justify-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.footer-Container h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-Contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-Contacts .iwhats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  margin: 0.5rem;
+  transition: opacity 0.4s;
+}
+
+.footer-Contacts .iwhats:hover {
+  opacity: 0.8;
+}
+
+.footer-Address a {
+  color: var(--color-neutral-30);
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+.footer-Address {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+/* Estilos para os links no rodapé */
+.footer-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-main .footer-List {
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-main .footer-List a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-List .footer-Link {
+  color: var(--color-neutral-30);
+  transition: all 0.4s;
+}
+
+.footer-List .footer-Link:hover {
+  color: #ffce00;
+}
+
+/* Estilos para o texto do FAQ */
+.accordion-Container {
+  padding: 40px 45px 45px 60px;
+  justify-content: space-between;
+  border: 1px solid var(--color-neutral-30);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-neutral-40);
+  padding: 2rem 1rem;
+  border-radius: 25px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-Container .accordion-Text {
+  width: 100%;
+}
+
+.accordion-Container .accordion-Text .text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: var(--color-neutral-50);
+  margin-bottom: 1rem;
+}
+
+.accordion-Container .accordion-Text .faq-Text {
+  height: 263px;
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-neutral-50) var(--color-neutral-40);
+}
+
+.faq-Text::-webkit-scrollbar {
+  width: 5px;
+}
+/* Define a cor do thumb */
+.faq-Text::-webkit-scrollbar-thumb {
+  background-color: var(--color-neutral-50);
+}
+
+/* Define a cor do track */
+.faq-Text::-webkit-scrollbar-track {
+  background-color: var(--color-neutral-30);
+}
+
+/* Define a largura do scrollbar (opcional) */
+.faq-Text::-webkit-scrollbar {
+  width: 5px; /* Largura do scrollbar em pixels */
+  height: 100%;
+}
+
+/* Estilos para as perguntas e respostas do FAQ */
+.accordion-Container .accordion-Text li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.accordion-Text li .question-Arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-Text li .question-Arrow .question {
+  font-size: 18px;
+  color: #595959;
+  font-family: "Poppins";
+  font-weight: 500;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+}
+
+/*Icone Faq*/
+.accordion-Text li .question-Arrow .arrow {
+  font-size: 20px;
+  color: #595959;
+  transition: all 0.3s ease;
+}
+
+.accordion-Text li.showAnswe .question-Arrow .arrow {
+  transform: rotate(-188deg);
+}
+.accordion-Text li:hover .question-Arrow .question,
+.accordion-Text li:hover .question-Arrow .arrow {
+  color: #ffce00;
+}
+
+.accordion-Text li.showAnswe .question-Arrow .question,
+.accordion-Text li.showAnswe .question-Arrow .arrow {
+  color: #ffce00;
+}
+
+.accordion-Text li .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.accordion-Text li p {
+  display: none;
+  width: 92%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.accordion-Text li.showAnswe p {
+  display: block;
+}
+
+/* Estilos para as redes sociais no rodapé */
+footer .footer-MediSocias {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+footer .footer-MediSocias a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-neutral-50);
+  color: var(--color-neutral-0);
+  border-radius: 50%;
+  margin: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+footer .footer-MediSocias a i {
+  font-size: 20px;
+}
+
+footer .footer-MediSocias a:hover {
+  color: #ffce00;
+  background-color: white;
+}

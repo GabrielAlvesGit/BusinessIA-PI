@@ -1,0 +1,1156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+/*------------------------------------- loading -------------------------------------*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-Loading {
+    width: 100%;
+    height: 100%;
+    background-color: #ffce00; /*f0f0f0*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-Loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*Poderia usar:
+    display: grid;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+}
+    */
+}
+
+.img-Loading {
+    width: 40px; /* Largura relativa de acordo com padding em conjunto */
+    height: 40px; /* Altura relativa, baseada na largura(width) */
+    background: #ffffff;
+}
+
+/* Cor da letra incial loading-text */
+.loading-text {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    gap: 4px;
+    /* comandos usados abaixo foi para testar e chegar na melhor performace possivel, se for refarzer use esse comandos para tentar maximizar.
+    line-height: 10rem;
+    background-color: #333;
+    color: white;
+    */
+}
+
+/* Fonte do rodapé*/
+.footer-Loading span {
+    font-size: 14px;
+    color: #222; /*#707a8a*/
+    font-family: "Courier New", Courier, monospace;
+}
+
+.footer-Loading span.traco-CorLoading {
+    background: linear-gradient(45deg, rgb(255, 223, 0), rgb(0, 128, 0));
+    font-size: 3px;
+    height: 10px;
+    color: transparent;
+}
+
+/*------------------------------------- Index -------------------------------------*/
+header a {
+    font-family: "Roboto", sans-serif;
+    max-height: 20rem;
+    text-decoration: none;
+    color: #1a1a13;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: #ffce00;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
+}
+
+.ul-MenuDesk {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.ul-MenuDesk a {
+    display: block;
+    padding: 0.5rem;
+}
+
+/* Aplicação de efeito nas letras  a das Li*/
+.navBar-listDesk .ul-MenuDesk .li-itemDesk a:hover {
+    text-decoration: none;
+    color: #ffffff; /*1a1a13*/
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    transition: color 0.2s, box-shadow 0.3s;
+}
+
+.bx-menu {
+    display: none;
+}
+
+/* botão Conecte-se Desk */
+.btn-Conecte-se1Desk {
+    display: block;
+    padding: 7px 15px;
+    border: 1px solid #1a1a13;
+    background-color: #ffce00;
+    border-radius: 4px; /*border-radius: 50em;*/
+    height: 31px;
+}
+
+/* botão Mobile Conecte-se Mobile */
+.btn-Conecte-se2Mobile {
+    display: none;
+}
+
+/* Efeito no botão conecte-se Desk */
+.btn-Conecte-se1Desk:hover {
+    background: rgba(238, 234, 234, 0.3);
+    border-color: #ffffff;
+    transition: all 0.3s;
+}
+.btn-Conecte-se1Desk a:hover {
+    color: #ffffff; /*1a1a13*/
+}
+.navBar-listDesk .btn-Conecte-se1Desk a {
+    padding: 8px 0 9px;
+}
+
+.navBar-listDesk {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 60.9%;
+    justify-content: space-between;
+}
+
+/*Icone do X Close*/
+.bx-x {
+    display: none;
+}
+
+/*-------------------------------------  carousel-section -------------------------------------*/
+/*! elementor - v3.15.0 - 20-08-2023 */
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+/* "Pai" carousel section */
+.elementor-element-232688b6 {
+    min-height: 92vh;
+}
+
+/* Botão Conecte-se do Carrosel */
+.elementor-642 .elementor-element.elementor-element-3e233871 .elementor-button,
+.elementor-642 .elementor-element.elementor-element-2ad628be .elementor-button,
+.elementor-642 .elementor-element.elementor-element-41d0a954 .elementor-button,
+.elementor-642 .elementor-element.elementor-element-2371111b .elementor-button,
+.elementor-642 .elementor-element.elementor-element-1b7d73f6 .elementor-button {
+    font-family: "Roboto", Sans-serif;
+    font-weight: 500;
+    background-color: #feb602;
+    padding: 15px 30px;
+    border-radius: 4px;
+}
+
+/* Style do carousel menor dentro do carousel maior */
+.elementor-testimonial__title {
+    width: 187px;
+    margin-right: 20px;
+}
+
+/* Container do carrosel h1 p e botão */
+.e-con > .e-con-inner {
+    gap: 38px;
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding-inline: 0;
+    height: 100%;
+}
+
+/* Espaçamento no p do Carrosel */
+.elementor-widget-container p {
+    line-height: 1.85714;
+}
+
+.elementor-widget-heading
+    .elementor-heading-title[class*="elementor-size-"]
+    > a {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.elementor-widget-heading .elementor-heading-title.elementor-size-small {
+    font-size: 15px;
+}
+.elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+    font-size: 19px;
+}
+.elementor-widget-heading .elementor-heading-title.elementor-size-large {
+    font-size: 29px;
+}
+.elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+    font-size: 39px;
+}
+.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+    font-size: 59px;
+}
+
+/* elementor  */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked
+    .elementor-drop-cap {
+    background-color: #69727d;
+    color: #fff;
+}
+.elementor-widget-text-editor.elementor-drop-cap-view-framed
+    .elementor-drop-cap {
+    color: #69727d;
+    border: 3px solid;
+    background-color: transparent;
+}
+.elementor-widget-text-editor:not(.elementor-drop-cap-view-default)
+    .elementor-drop-cap {
+    margin-top: 8px;
+}
+.elementor-widget-text-editor:not(.elementor-drop-cap-view-default)
+    .elementor-drop-cap-letter {
+    width: 1em;
+    height: 1em;
+}
+.elementor-widget-text-editor .elementor-drop-cap {
+    float: left;
+    text-align: center;
+    line-height: 1;
+    font-size: 50px;
+}
+.elementor-widget-text-editor .elementor-drop-cap-letter {
+    display: inline-block;
+}
+
+/*------------------------------------- Main -------------------------------------*/
+main {
+    height: 100%;
+}
+
+.introducao {
+    display: flex;
+    margin: 30px 0 0 38px;
+}
+
+.img-Introducao {
+    width: 330px;
+    max-width: 100%;
+    max-height: 280px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto-Introducao {
+    padding: 10px;
+}
+
+.texto-Introducao h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+.texto-Introducao p {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #0f0f0f;
+    margin-top: 10px;
+}
+
+.texto-Introducao p span {
+    margin-top: 20px;
+}
+
+.plataforma-Digital {
+    margin: 30px 0 0 0px;
+    height: 100vh;
+    max-width: 100%; /* A imagem não será maior que o contêiner pai */
+    height: auto;
+}
+
+.sectionPlataforma-Titlle {
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.plataforma-Container {
+    display: grid;
+    max-width: 97%;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.plataforma-Post {
+    display: flex;
+    background: #ffffff;
+    padding: 15px 15px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(247, 241, 241);
+}
+
+.photoPlataforma {
+    max-height: 100px;
+    object-fit: cover; /* Ficar dentro daquele espaço, melhor até agora que usei para img*/
+}
+
+.plataforma-Titlle {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+.plataforma-Description {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 15px;
+    color: #606060;
+}
+
+/*------------------------------------- footer -------------------------------------*/
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+    --color-neutral-50: #ffce00;
+    --color-neutral-60: #1a1a13;
+}
+
+footer {
+    background-color: var(--color-neutral-40);
+    color: var(--color-neutral-60);
+    padding: 3rem 0 0 0;
+}
+
+.footer-Container {
+    display: grid;
+    max-width: 1150px;
+    grid-template-columns: repeat(
+        4,
+        1fr
+    ); /* Primeira, terceira e quarta colunas com tamanho igual */
+    grid-template-columns: 25% 50% 15% 10%; /* Segunda coluna maior */
+    padding: 3rem 3rem;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.footer-Container h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-Contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.footer-Contacts .iEmail,
+.iMessage {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffce00;
+    color: var(--color-neutral-30);
+    border-radius: 50%;
+    margin: 0.5rem;
+    transition: opacity 0.4s;
+    border: 1px solid var(--color-neutral-50);
+    cursor: pointer;
+}
+
+.footer-Contacts .iEmail:hover,
+.iMessage:hover {
+    color: #ffce00; /* Cor que o ícone terá ao passar o mouse sobre ele */
+    background: #fff;
+    transition: 0.2s;
+}
+
+.footer-Contacts .iwhats {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    margin: 0.5rem;
+    transition: background-color 0.4s, color 0.4s;
+    border: 1px solid #25d366;
+}
+
+.footer-Contacts .iwhats:hover {
+    opacity: 0.8;
+    background: #fff;
+    color: #25d366;
+}
+
+.footer-Address a {
+    color: var(--color-neutral-30);
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+.footer-Address {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+/* Estilos para os links no rodapé */
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-main .footer-List {
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-main .footer-List a {
+    display: inline-block;
+    margin: 0.2rem;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-List .footer-Link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-List .footer-Link:hover {
+    color: #ffce00;
+}
+
+/* Estilos para o texto do FAQ */
+.accordion-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-neutral-30);
+    padding: 2rem 1rem; /*padding: 40px 45px 45px 60px;*/
+    border-radius: 25px;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.accordion-Container .accordion-Text {
+    width: 100%;
+}
+
+.accordion-Container .accordion-Text .text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: var(--color-neutral-50);
+    margin-bottom: 1rem;
+}
+
+.accordion-Container .accordion-Text .faq-Text {
+    height: 263px;
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-neutral-50) var(--color-neutral-40);
+}
+
+.faq-Text::-webkit-scrollbar {
+    width: 5px;
+}
+/* Define a cor do thumb */
+.faq-Text::-webkit-scrollbar-thumb {
+    background-color: var(--color-neutral-50);
+}
+
+/* Define a cor do track */
+.faq-Text::-webkit-scrollbar-track {
+    background-color: var(--color-neutral-30);
+}
+
+/* Define a largura do scrollbar (opcional) */
+.faq-Text::-webkit-scrollbar {
+    width: 5px; /* Largura do scrollbar em pixels */
+    height: 100%;
+}
+
+/* Estilos para as perguntas e respostas do FAQ */
+.accordion-Container .accordion-Text li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.accordion-Text li .question-Arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-Text li .question-Arrow .question {
+    font-size: 18px;
+    color: #595959;
+    font-family: "Poppins";
+    font-weight: 500;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+}
+
+/*Icone Faq*/
+.accordion-Text li .question-Arrow .arrow {
+    font-size: 20px;
+    color: #595959;
+    transition: all 0.3s ease;
+}
+
+.accordion-Text li.showAnswe .question-Arrow .arrow {
+    transform: rotate(-188deg);
+}
+.accordion-Text li:hover .question-Arrow .question,
+.accordion-Text li:hover .question-Arrow .arrow {
+    color: #ffce00;
+}
+
+.accordion-Text li.showAnswe .question-Arrow .question,
+.accordion-Text li.showAnswe .question-Arrow .arrow {
+    color: #ffce00;
+}
+
+.accordion-Text li .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.accordion-Text li p {
+    display: none;
+    width: 92%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #595959;
+}
+
+.accordion-Text li.showAnswe p {
+    display: block;
+}
+
+/* Estilos para as redes sociais no rodapé */
+footer .footer-MediSocias {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row-reverse;
+    grid-column: 1 / span 4;
+}
+
+footer .footer-MediSocias a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-neutral-50);
+    color: var(--color-neutral-0);
+    border-radius: 50%;
+    margin: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.4s, color 0.4s;
+    border: 1px solid #ffce00;
+}
+
+footer .footer-MediSocias a i {
+    font-size: 20px;
+}
+
+footer .footer-MediSocias a:hover {
+    opacity: 0.8;
+    color: #ffce00;
+    background: #fff;
+}
+
+.footer-copyright p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    color: #222; /*#707a8a*/
+    font-weight: 500;
+}
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f2f0;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+/*------------------------------------- Login -------------------------------------*/
+/* Elemento pai do Login*/
+.login-container {
+    display: grid;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #ffce00; /* Fundo amarelo */
+    overflow: hidden;
+    grid-template-columns: 60% 40%;
+}
+
+/* Elemento filho esquerda do Login*/
+.login-left {
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    align-items: center;
+    cursor: default;
+    font-weight: 600;
+    text-align: left;
+    color: #0e0c0c;
+    padding: 40px;
+    height: 100vh;
+}
+
+.typing-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 10px;
+    overflow: hidden; /* Esconde o texto que extrapolar o container */
+    position: relative; /* Permite posicionar o cursor */
+    margin-top: 40%;
+}
+
+/* Estilos para o logotipo */
+.footerloging img {
+    max-width: 50px;
+    margin-bottom: 20px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Elemento filho da direita do Login */
+.login-right {
+    display: grid;
+    flex: 1;
+    background-color: #fff; /* Fundo branco na segunda coluna */
+    padding: 40px;
+    align-items: end;
+    text-align: center;
+}
+
+/* Estilos para o texto digitado */
+
+/* Elemento filho Nome da empresa Business.IA O ●*/
+.company-nameright {
+    display: none;
+}
+
+/* Estilos para o círculo de fonte  ● */
+.font-circle {
+    font-size: 29px;
+    font-family: Söhne Circle, system-ui, -apple-system, Segoe UI, Roboto,
+        Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+
+/* Seção "Get Started" */
+.get-started-section {
+    width: 100%;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* Contêiner dos botões */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+
+/* Estilos para botões de login e inscrição */
+.login-button,
+.signup-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    max-width: 214px;
+    height: 48px;
+    /*padding: 30px 20px;*/
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover,
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé do login */
+.footerloging {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Estilos para o logotipo no rodapé */
+.footer img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+/* Estilos para links no rodapé */
+.footer-links {
+    font-size: 14px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--color-neutral-30);
+    margin-right: 5px;
+}
+
+.footer-links span {
+    margin: 0 5px;
+    color: #333;
+}
+
+/*------------------------------------------------Menu Mobile-----------------------------------------*/
+
+/*Menu Mobile*/
+@media (max-width: 468px) {
+    /*Style no icone hburg*/
+    .bx-menu {
+        display: block;
+        /*color: rgb(255, 255, 255);*/
+        font-size: 22px;
+        cursor: pointer;
+        position: relative;
+    }
+    .logo {
+        margin-left: -17px;
+    }
+
+    .ul-MenuDesk {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 48px;
+        right: 0px;
+        background: #ffce00;
+        /*Foi usado o calc para equilibra a tela e não deixar com barra de scroll, isso
+        acontece por conta do top:70px então o melhor foi usar o calc*/
+        height: 0px;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active ul.ul-MenuDesk {
+        height: calc(100vh - 48px);
+        visibility: visible;
+        /* Se eu colocar mais elemento nas li o overflow-y: auto; vai criar um scroll*/
+        overflow-y: auto;
+    }
+
+    .ul-MenuDesk .li-itemDesk a {
+        padding: 1rem 30px;
+        margin: 0 0.9rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    /* botão Desk Conecte-se */
+    .btn-Conecte-se1Desk {
+        display: none;
+    }
+
+    /* botão Mobile Conecte-se */
+    .btn-Conecte-se2Mobile {
+        display: block;
+        border: 1px solid #1a1a13;
+        background-color: #feb602;
+        border-radius: 4px; /* border-radius: 50em;*/
+        height: 31px;
+        margin: 10px 0px 10px 39px;
+    }
+
+    .btn-Conecte-se2MobileContainer {
+        display: block;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-Conecte-se2Mobile:hover {
+        background: rgba(238, 234, 234, 0.3);
+        border-color: #ffffff;
+        transition: all 0.3s;
+    }
+
+    .btn-Conecte-se2Mobile a:hover {
+        color: #ffffff;
+    }
+
+    .btn-Conecte-se2Mobile a {
+        padding: 1px 0 2px;
+        margin: 0 0.9rem;
+    }
+
+    /* Menu Hamburg */
+    .bx-x {
+        display: block;
+        color: rgb(255, 255, 255);
+        font-size: 23px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    /*Plataformas Digitais*/
+    .plataforma-Container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .footer-Loading span {
+        font-size: 9px;
+    }
+    .introducao {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+
+    .texto-Introducao {
+        align-items: center;
+    }
+
+    .texto-Introducao h1 {
+        text-align: center;
+    }
+    .texto-Introducao p {
+        /*padding: 10px;*/
+        text-align: center;
+    }
+
+    /*Post dentro do Main Plataformas*/
+    .plataforma-Post {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .as-slider-background .currentForward {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .footer-Container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+    .accordion-Container {
+        width: 100%;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .footer-main {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .accordion-Container .accordion-Text {
+        width: 100%;
+    }
+
+    .footer-Contacts {
+        width: 100%;
+    }
+
+    footer .footer-MediSocias {
+        grid-column: 1 / span 1;
+    }
+
+    .footer-copyright p {
+        font-size: 0.9rem;
+        color: #222; /*#707a8a*/
+    }
+
+    /*------------------------------------- Login -------------------------------------*/
+
+    .company-nameright {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        align-items: center;
+        cursor: default;
+        font-weight: 600;
+        text-align: left;
+        white-space: nowrap;
+        color: #ffce00;
+    }
+
+    /* Login Left */
+    .login-left {
+        display: none;
+    }
+
+    .login-right {
+        align-items: stretch;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .button-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 23% 0;
+        gap: 10px;
+    }
+
+    .login-button,
+    .signup-button {
+        padding: 30px 53%;
+
+        white-space: nowrap;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*Menu Tablet*/
+@media (max-width: 767px) and (min-width: 469px) {
+    /*Style do botão Conecta-se*/
+    .btn-Conecte-se1Desk {
+        display: block;
+        padding: 7px 15px;
+    }
+
+    /*Logo icone*/
+    .logo {
+        margin-left: -17px;
+    }
+    /*Style no icone hburg*/
+    .bx-menu {
+        display: block;
+        /*color: rgb(255, 255, 255);*/
+        padding: 0.5rem 1rem;
+        font-size: 22px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .ul-MenuDesk {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 48px;
+        right: 0px;
+        background: #ffce00;
+        /*Foi usado o calc para equilibra a tela e não deixar com barra de scroll, isso
+        acontece por conta do top:70px então o melhor foi usar o calc*/
+        height: 0px;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active ul.ul-MenuDesk {
+        height: calc(100vh - 48px);
+        visibility: visible;
+        /* Se eu colocar mais elemento nas li o overflow-y: auto; vai criar um scroll*/
+        overflow-y: auto;
+    }
+
+    .ul-MenuDesk a {
+        padding: 1rem 30px;
+        margin: 0 0.9rem;
+        border-bottom: 2px solid rgba(51, 48, 48, 0.05);
+    }
+
+    /*Poderia inverte usando orde: 1; mas dentro do btn-Conecte-se1Desk, mas eu revertia assim usando flex-direction*/
+    .navBar-listDesk {
+        flex-direction: row;
+        display: flex;
+        width: 9.9rem;
+    }
+
+    /*Icone do X Close*/
+    .bx-x {
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 0.5rem 1rem;
+        font-size: 23px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    /* botão Mobile Conecte-se */
+    .btn-Conecte-se2Desk {
+        display: none;
+    }
+
+    /* introducao do site */
+    .introducao {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0 0 0px;
+    }
+
+    .texto-Introducao h1 {
+        text-align: center;
+    }
+
+    .texto-Introducao p {
+        /*padding: 10px;*/
+        text-align: center;
+    }
+
+    /*Post dentro do Main Plataformas*/
+    .plataforma-Post {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 30px 0px 30px;
+    }
+
+    .as-slider-background .currentForward {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .footer-Container {
+        grid-template-columns: repeat(2, minmax(30%, 1fr));
+    }
+
+    .accordion-Container .accordion-Text {
+        width: 100%;
+    }
+
+    .footer-Contacts {
+        width: 100%;
+    }
+    footer .footer-MediSocias {
+        grid-column: 1 / span 2;
+    }
+
+    .accordion-Container {
+        width: 100%;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .footer-copyright p {
+        font-size: 1rem;
+    }
+
+    /*------------------------------------- Login -------------------------------------*/
+    /* Estilos para o container principal de login */
+    .login-container {
+        grid-template-columns: repeat(1fr);
+    }
+
+    /* Nome da empresa (direita) */
+    .company-nameright {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        align-items: center;
+        cursor: default;
+        font-weight: 600;
+        text-align: left;
+        color: #ffce00;
+    }
+
+    /* Elemento filho da direita do Login */
+    .login-right {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        align-items: stretch;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Elemento filho da esquerda do Login */
+    .login-left {
+        display: none;
+    }
+
+    /*Button Container Log in e Sign up*/
+    .button-container {
+        display: block;
+        white-space: nowrap;
+    }
+    /* 2 dois Button Log in e Sign up*/
+    .login-button,
+    .signup-button {
+        width: 214px;
+    }
+}
