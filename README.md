@@ -91,7 +91,7 @@ A Business.IA, que começou como um projeto acadêmico, está em processo de lan
 ## Mapa do Site e Wireframes
 <img src="https://github.com/GabrielAlvesGit/BusinessIA-PI/assets/102634725/37ec0319-eb7e-4c69-aec7-8ba2ad5e1829" width="370" height="240">
 
--   [Doc. Mapa e Wiframe <i class="fas fa-arrow-right" width="30" height="20" style="transform: rotate(-5deg);"></i>](https://drive.google.com/file/d/1UBcM8Y85_XLCzrGDgVAndn3mWEvm9apA/view?usp=sharing)
+-   [Doc. Mapa e Wiframe <i class="fas fa-arrow-right" width="30" height="20" style="transform: rotate(-5deg);"></i>](https://drive.google.com/file/d/1UBcM8Y85_XLCzrGDgVAndn3mWEvm9apA/view?usp=sharing) <img src="./assets/img/iconAcimaDireitaBlue.png" alt="Imagem Seta A Direita Blue" style="width: 12px; height: 12px; ">
 
 ## Como Contribuir
 
