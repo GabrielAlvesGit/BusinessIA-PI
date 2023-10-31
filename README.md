@@ -1,4 +1,4 @@
-# BusinessIA-PI
+# BusinessIA-PI 🌐🚀
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 <h1 align="center">
   <img src="./assets/img/logo-instituto.png" alt="Imagem do IFSP" width="250" height="230" style="border-radius: 50;">
@@ -64,7 +64,7 @@
     <img align="center" alt="Gabriel-JavaScript" height="45" width="55" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg">
     <img align="center" alt="Gabriel-Sql" height="45" width="55" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" >
     <img align="center" alt="Vue.js" height="45" width="55" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" ></br>
-    Além dessas tecnologias, estamos abertos a explorar outras linguagens e ferramentas à medida que o projeto avança. A inovação e a adaptação são fundamentais para nosso sucesso.
+    Além dessas tecnologias, estamos abertos a explorar outras linguagens e ferramentas à medida que o projeto avança. A inovação e a adaptação são fundamentais para nosso sucesso. 💡
 </div>
 
 ## Descrição do Projeto
@@ -73,19 +73,19 @@ Este projeto, desenvolvido na disciplina de Desenvolvimento Web I, tem como obje
 
 O website visa facilitar a compra de produtos desejados e, ao mesmo tempo, oferecer suporte eficaz na resolução de dúvidas dos clientes. Tudo isso é alcançado por meio de uma combinação de tecnologias avançadas, como **Inteligência Artificial** e **Análise de Dados**, alinhadas com **Estratégias de Marketing**.
 
-A Business.IA, que começou como um projeto acadêmico, está em processo de lançamento como uma startup, e este projeto de Desenvolvimento Web I desempenha um papel fundamental nessa jornada, contribuindo para a criação de um website que reflete a visão e os objetivos da empresa.
+A Business.IA, que começou como um projeto acadêmico, está em processo de lançamento como uma startup, e este projeto de Desenvolvimento Web I desempenha um papel fundamental nessa jornada, contribuindo para a criação de um website que reflete a visão e os objetivos da empresa. 🛒🤖
 </p>
 
 <a href="https://drive.google.com/file/d/1UBcM8Y85_XLCzrGDgVAndn3mWEvm9apA/view?usp=sharing">Documentação <img src="./assets/img/iconAcimaDireitaBlue.png" alt="Imagem Seta A Direita Blue" style="width: 12px; height: 12px; "></a>
 
 
 
-<p>| Público-Alvo
+<p>| Público-Alvo 
   
  O Business.IA pretende alcançar:
 - Grupo de Pessoas: Empresas e Empreendedores
 - Localização Geográfica: Brasil
-- Interesses: **Dados** e Estratégias de **Marketing**
+- Interesses: **Dados** e Estratégias de **Marketing** 🌍🎯
 </p>
 
 ## Mapa do Site e Wireframes
@@ -102,7 +102,7 @@ Se desejar contribuir para este projeto, siga estas etapas:
 3. Faça as alterações desejadas.
 4. Faça o commit de suas alterações: `git commit -m "Minha contribuição"`
 5. Envie suas alterações para o repositório: `git push origin https://github.com/GabrielAlvesGit/BusinessIA-PI.git`
-6. Abra um Pull Request para revisão.
+6. Abra um Pull Request para revisão. 📚🤝
 
 ## Licença
 
