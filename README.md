@@ -7,7 +7,7 @@
 # Projeto de Desenvolvimento Web - Business.IA
 
 <h1 align="center">
-  <a href=" ">website view <img src="./assets/img/iconAcimaDireitaBlue.png" alt="Imagem/Icone seta a direita blue" style="width: 20px; height: 20px; margin-left: 5px;"></a>
+  <a href="https://6546b8a8ffce14594668e39b--sprightly-pothos-2f8718.netlify.app/">website view <img src="./assets/img/iconAcimaDireitaBlue.png" alt="Imagem/Icone seta a direita blue" style="width: 20px; height: 20px; margin-left: 5px;"></a>
 </h1>
 
 ## Informações Gerais
